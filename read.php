@@ -16,10 +16,11 @@ try {
 
 
 $sql = "SELECT Id
-               ,Voornaam
-               ,Tussenvoegsel
-               ,Achternaam
-                FROM persoon";
+               ,Merk
+               ,Model
+               ,Topsnelheid
+               ,Prijs
+                FROM DureAuto";
 
 $statement = $pdo->prepare($sql);
 $statement->execute();
@@ -30,9 +31,10 @@ $tableRows = "";
 
 foreach($result as $info) {
     $tableRows .= "<tr>
-                    <td>$info->Voornaam</td>
-                    <td>$info->Tussenvoegsel</td>
-                    <td>$info->Achternaam</td>
+                    <td>$info->Merk</td>
+                    <td>$info->Model</td>
+                    <td>$info->Topsnelheid</td>
+                    <td>$info->Prijs</td>
                     <td>
                         <a href='delete.php?Id=$info->Id'>
                             <img src='img/rood-kruis-png-.avif' alt='cross' alt='cross' style='width: 40px;'>
@@ -47,7 +49,7 @@ foreach($result as $info) {
 }
 ?>
 
-<h3>Persoonsgegevens</h3>
+<h3>DureAuto</h3>
 
 <a href="index.php">
     <input type="button" value="Maak een nieuw record">
@@ -57,10 +59,10 @@ foreach($result as $info) {
 
 <table border='1'>
     <thead>
-        <th>Voornaam</th>
-        <th>Tussenvoegsel</th>
-        <th>Achternaam</th>
-        <th></th>
+        <th>Merk</th>
+        <th>Model</th>
+        <th>Topsnelheid</th>
+        <th>Prijs</th>
         <th></th>
     </thead>
     <tbody>
