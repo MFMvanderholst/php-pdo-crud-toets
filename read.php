@@ -46,11 +46,9 @@ foreach($result as $info) {
 
 <h1>De vijf duurste auto's ter wereld</h1>
 
-<a href="index.php">
-    
-</a>
 
-<br><br>
+
+
 
 <table border='1'>
     <thead>
