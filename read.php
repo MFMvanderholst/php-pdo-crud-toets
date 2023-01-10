@@ -40,19 +40,14 @@ foreach($result as $info) {
                             <img src='img/rood-kruis-png-.avif' alt='cross' alt='cross' style='width: 40px;'>
                         </a>
                     </td>
-                    <td>
-                        <a href='update.php?Id=$info->Id'>
-                            <img src='img/b_edit.png' alt='cross' alt='cross' style='width: 40px;'>
-                        </a>
-                    </td>
                   </tr>";
 }
 ?>
 
-<h3>De vijf duurste auto's ter wereld</h3>
+<h1>De vijf duurste auto's ter wereld</h1>
 
 <a href="index.php">
-    <input type="button" value="Maak een nieuw record">
+    
 </a>
 
 <br><br>
