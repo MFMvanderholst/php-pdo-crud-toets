@@ -13,18 +13,6 @@
     <title>PHP-CRUD-toets</title>
 </head>
 <body>
-<table border='1'>
-    <thead>
-        <th>Merk</th>
-        <th>Model</th>
-        <th>Topsnelheid</th>
-        <th>Prijs</th>
-        <th></th>
-    </thead>
-    <tbody>
-        <?php echo $tableRows; ?>
-    </tbody>
-</table>
-    
+
 </body>
 </html>

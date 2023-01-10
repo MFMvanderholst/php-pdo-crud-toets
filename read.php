@@ -49,7 +49,7 @@ foreach($result as $info) {
 }
 ?>
 
-<h3>DureAuto</h3>
+<h3>De vijf duurste auto's ter wereld</h3>
 
 <a href="index.php">
     <input type="button" value="Maak een nieuw record">
