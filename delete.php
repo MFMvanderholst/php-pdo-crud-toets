@@ -23,7 +23,7 @@ try {
 
 // Maak een sql-query die het record gaat verwijderen uit de database
 
-$sql = "DELETE FROM persoon
+$sql = "DELETE FROM DureAuto
         WHERE Id = :Id;";
 
 // We prepareren de query zodat we de waarde van Id koppelen aan placeholder :Id
